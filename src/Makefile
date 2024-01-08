@@ -55,6 +55,6 @@ test: $(BUILD)/master.img
 clean:
 	rm -rf $(BUILD)
 
-.PHONY: bochs
-bochs: $(BUILD)/master.img
-	bochs -q
+.PHONY: bochsg
+bochsg: $(BUILD)/master.img
+	bochs-gdb -q -f ../bochs/bochsrc.gdb

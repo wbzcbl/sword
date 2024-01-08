@@ -1,7 +1,7 @@
 #include <sword/sword.h>
 
 int magic = SWORD_MAGIC;
-char message[] = "hello word!!!"; //.data
+char message[] = "Hello Sword!!!"; //.data
 char buf[1024];                 //.bss
 
 void kernel_init(){
