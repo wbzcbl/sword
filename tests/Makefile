@@ -9,7 +9,7 @@ CFLAGS+= -fno-pic	#不要位置无关的代码 positin independent code
 # CFLAGS+= -fno-stack-protector	#不要栈保护
 CFLAGS+= -mpreferred-stack-boundary=2	# 不需要栈对齐
 CFLAGS+= -fno-asynchronous-unwind-tables #不需要CFI信息
-CFLAGS+= -fomit-frame-pointer	# 不需要栈帧
+# CFLAGS+= -fomit-frame-pointer	# 不需要栈帧
 
 CFLAGS:= $(strip ${CFLAGS})
 
