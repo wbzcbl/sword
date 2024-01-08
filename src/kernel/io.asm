@@ -57,7 +57,7 @@ outw:
 
     mov edx, [ebp + 8]; port
     mov eax, [ebp + 12]; value
-    out dx, ax; 将al 的 8bit 输出到端口号 dx
+    out dx, ax; 将ax 的 8bit 输出到端口号 dx
 
     jmp $+2;    延迟
     jmp $+2;    延迟
