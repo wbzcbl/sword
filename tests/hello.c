@@ -1,7 +1,7 @@
 #include<stdio.h>
 
-char message[] = "hello word\n";
-int a[1024];
+char message[] = "hello word!!!\n";
+char buf[1024];
 
 int main(){
    printf(message);
