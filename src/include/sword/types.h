@@ -3,7 +3,9 @@
 
 #define EOF - 1 //end of file
 
-#define NULL 0
+#define NULL ((void *)0)    //空指针
+
+#define EOS '\0'    //字符串结尾
 
 #define bool _Bool
 #define true 1
