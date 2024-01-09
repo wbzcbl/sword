@@ -8,5 +8,6 @@
 *.zst
 *.gz
 
+build
 bochs/src
 bochs/pkg
