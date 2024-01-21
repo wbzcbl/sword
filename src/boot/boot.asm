@@ -1,4 +1,4 @@
-[org 0x7c00]
+[org 0x7c00] ;历史原因，bootloader占1024byte，从最后取
 
 ; 设置屏幕模式为文本模式，清除屏幕
 mov ax, 3
