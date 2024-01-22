@@ -13,7 +13,10 @@
 			"console.h": "c",
 			"io.h": "c",
 			"random": "c",
-			"printk.h": "c"
+			"printk.h": "c",
+			"stdio.h": "c",
+			"debug.h": "c",
+			"types.h": "c"
 		}
 	}
 }
