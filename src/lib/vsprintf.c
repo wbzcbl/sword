@@ -5,7 +5,7 @@
 
 #include <sword/stdarg.h>
 #include <sword/string.h>
-// #include <sword/assert.h>
+#include <sword/assert.h>
 
 #define ZEROPAD 0x01 // 填充零,占位符
 #define SIGN 0x02    // unsigned/signed long符号
@@ -437,7 +437,7 @@ int vsprintf(char *buf, const char *fmt, va_list args)
 
     // 返回转换好的字符串长度值
     i = str - buf;
-    // assert(i < 1024);
+    assert(i < 1024);
     return i;
 }
 

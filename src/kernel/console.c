@@ -141,7 +141,6 @@ static void command_del(){
 
 void console_write(char *buf, u32 count){
     char ch;
-    char *ptr = (char*)pos;
     while(count--){
         ch = *buf++;
         switch (ch)
@@ -180,13 +179,12 @@ void console_write(char *buf, u32 count){
                 pos -= ROW_SIZE;
                 command_lf();
             }
-            *ptr = ch;  //字符内容
-            ptr++;
-            *ptr = attr;    //字符样式
-            ptr++;
-            pos += 2;
-            x++;
+            *((char*)pos) = ch;  //字符内容
+            pos++;
+            *((char*)pos) = attr;    //字符样式
+            pos++;
 
+            x++;
             break;
         }
     }

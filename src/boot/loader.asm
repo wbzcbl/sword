@@ -41,7 +41,7 @@ detect_memory:
     jmp prepare_protected_mode
 
 prepare_protected_mode:
-    xchg bx, bx
+    ; xchg bx, bx
     cli; 关闭中断
 
     ; 打开 A20 线，地址回绕

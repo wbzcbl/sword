@@ -34,7 +34,9 @@ $(BUILD)/kernel.bin: \
 	$(BUILD)/lib/string.o	\
 	$(BUILD)/kernel/console.o \
 	$(BUILD)/kernel/printk.o \
-	$(BUILD)/lib/vsprintf.o
+	$(BUILD)/lib/vsprintf.o \
+	$(BUILD)/kernel/assert.o \
+	$(BUILD)/kernel/debug.o
 
 	$(shell mkdir -p $(dir $@))
 	ld -m elf_i386 -static $^ -o $@ -Ttext $(ENTRYPOINT)
@@ -60,6 +62,10 @@ test: $(BUILD)/master.img
 .PHONY: clean
 clean:
 	rm -rf $(BUILD)
+
+.PHONY: bochs
+bochs: $(BUILD)/master.img
+	bochs -q -f ../bochs/bochsrc
 
 .PHONY: bochsg
 bochsg: $(BUILD)/master.img

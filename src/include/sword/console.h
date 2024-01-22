@@ -1,5 +1,5 @@
-#ifndef CONSOLE_H
-#define CONSOLE_H
+#ifndef SWORD_CONSOLE_H
+#define SWORD_CONSOLE_H
 
 #include<sword/types.h>
 

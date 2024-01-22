@@ -4,14 +4,14 @@
 #include <sword/string.h>
 #include <sword/console.h>
 #include <sword/printk.h>
+#include <sword/assert.h>
+#include <sword/debug.h>
 
 
 void kernel_init(){
     console_init();
 
-    int cnt =20;
-    while(cnt--){
-        printk("hello sword %d %d\n", cnt, -10);
-    }
+    BMB;
+    DEBUGK("debug sword!!!\n");
     return;
 }

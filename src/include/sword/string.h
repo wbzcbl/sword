@@ -1,5 +1,5 @@
-#ifndef STRING_H
-#define STRING_H
+#ifndef SWORD_STRING_H
+#define SWORD_STRING_H
 
 #include <sword/types.h>
 
