@@ -16,7 +16,8 @@
 			"printk.h": "c",
 			"stdio.h": "c",
 			"debug.h": "c",
-			"types.h": "c"
+			"types.h": "c",
+			"global.h": "c"
 		}
 	}
 }
