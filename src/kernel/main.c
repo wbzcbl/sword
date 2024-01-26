@@ -6,12 +6,14 @@
 #include <sword/printk.h>
 #include <sword/assert.h>
 #include <sword/debug.h>
-
+#include <sword/global.h>
+#include <sword/task.h>
+#include <sword/interrupt.h>
 
 void kernel_init(){
     console_init();
-
-    BMB;
-    DEBUGK("debug sword!!!\n");
+    gdt_init();
+    interrupt_init();
+    // task_init(); 
     return;
 }
