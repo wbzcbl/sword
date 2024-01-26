@@ -14,8 +14,6 @@ mov sp, 0x7c00
 mov si, booting
 call print
 
-; xchg bx, bx; 断点
-
 mov edi, 0x1000; 读取目标内存
 mov ecx, 2; 起始扇区
 mov bl, 4; 扇区数量
@@ -24,9 +22,6 @@ call read_disk
 cmp word [0x1000], 0x55aa
 jnz error; 载入错误跳转到error
 jmp 0:0x1002; 正确则跳转到代码段地址
-; xchg bx, bx; 断点
-
-; jmp error
 
 ;阻塞
 jmp $
