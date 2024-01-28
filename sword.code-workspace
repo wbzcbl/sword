@@ -7,17 +7,9 @@
 	"settings": {
 		"files.associations": {
 			"*.def": "c",
-			"sword.h": "c",
-			"string.h": "c",
+			"*.h": "c",
 			"system_error": "c",
-			"console.h": "c",
-			"io.h": "c",
 			"random": "c",
-			"printk.h": "c",
-			"stdio.h": "c",
-			"debug.h": "c",
-			"types.h": "c",
-			"global.h": "c"
 		}
 	}
 }
